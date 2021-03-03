@@ -1,0 +1,70 @@
+Sviluppare una tabella che riguarda le auto di un concessionario di auto usate.
+La seguente tabella dovrà contenere i dati che possono servire al gestore di attività.
+
+DATABASE
+
+Tabella: Auto
+
+Campo                                       Tipo di Dato                                        Atributo
+
+id                                          number - INT                                        PRIMARY KEY (avrà in automatico AUTO_INCREMENT e UNIQUE)
+
+marca                                       string - VARCHAR(30)                                NOTNULL
+(es: Audi)
+
+modello                                     string - VARCHAR(30)                                NOTNULL
+(es: A4)
+
+versione                                    string - VARCHAR(60)                                NOTNULL
+(es: A4 Avant 2.0 TDI 143 CV)
+
+prezzo                                      number - MEDIUMINT                                  NOTNULL
+(es: 5.800)
+
+carburante                                  string - VARCHAR(20)                                NOTNULL
+(es: Diesel)
+
+potenza_kw                                  number - TINYINT                                    NOTNULL
+(es: 103)
+
+cilindrata_cm3                              number - SMALLINT                                   NULL
+(es: 1968)
+
+tipo_cambio                                 string - VARCHAR(20)                                NOTNULL
+(es: Cambio manuale)
+
+n_porte                                     number - TINYINT                                    NOTNULL
+(es: 5)
+
+n_posti                                     number - TINYINT                                    NOTNULL
+(es: 5)
+
+immatricolazione                            date - TIMESTAMP                                    NOTNULL
+(es: 2008 / 03)
+
+classe_emissioni_euro                       number - TINYINT                                    NOTNULL
+(es: 4)
+
+consumo                                     string - VARCHAR(20)                                NOTNULL
+(es: 5.7 l/100 km)
+
+tipo_di_veicolo                             string - VARCHAR(15)                                NOTNULL
+(se usato,nuovo,noleggio..)
+
+tipo_di_usato                               string - VARCHAR(30)                                NULL
+(aziendale,epoca,dimostrativo)
+
+chilometri_percorsi                         number - MEDIUMINT                                  NOTNULL
+(es: 103.000)
+
+n_proprietari_precedenti                    number - TINYINT                                    NULL
+(es: 2)
+
+colore                                      string - VARCHAR(50)                                NOTNULL
+(es: Grigio Scuro Opaco Metallizzato...)
+
+anno_produzione                             date - YEAR                                         NULL
+(es: 2007)
+
+photo                                       string - VARCHAR(255)                               NOTNULL
+(es: percorso della foto)
